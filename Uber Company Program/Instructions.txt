@@ -1,0 +1,79 @@
+In this lab task you are going to create three classes
+1. driver
+2. rider
+3. ride
+
+Create a class driver with the following data members and methods:
+Data members:
+	• driver's name (string)
+	• driver's contact Number (string)
+	• driver's address (string)
+	• driver's CNIC (string)
+	• trips completed (int)
+	• driver's rating (float)
+Methods:
+	• default parametrized constructor (by default: store 0 in all numerical and NULL in all string variables)
+	• setter and constant getter functions for each data member.
+	• constant members function Driver's info. This function should display all the info related to driver.
+
+Create a class rider with the following data members and methods:
+Data members:
+	• rider's name (string)
+	• rider's contact (string)
+	• rider's rating (float)
+	• trips cancelled (int)
+Methods:
+	• default paramterized constructor (by default: store 0 in all numerical and NULL in all string variables)
+	• setter and constant getter functions for each data member.
+	• constant member function Rider's info. This function should display all the info related to rider.
+
+Create a class ride with the following data members and methods:
+Data members:
+	• an object of driver
+	• an object of rider
+	• pickup location (string)
+	• destination (string)
+	• vehicle number (string)
+	• tracking id (int)
+	• category (string, provided below)
+	• base fare (float)
+	• per km charges (float, provided below)
+	• per min charges (float, provided below)
+	• promo code (string)
+	• discount (float)
+	• start time (preferably string that stores the time in 24hr clock e.g 1620 for 4:20PM)
+	• arrival time (preferably string that stores the time in 24hr clock e.g 1658 for 4:58PM)
+Methods:
+	• default parameterized constructor (by default: by default: store 0 in all numerical and NULL in all string variables)
+	• setter functions for each data member including data members of driver and rider class.
+	• constant getter function calculateBill.
+		o if the promo code provided by the user matches with the string "pk8976" than provide 25% discount.
+		o calculate the total time of journey by subtracting ending time from start time. since their data types are string so use function stoi to convert these string values into integers
+	• constant member function showTrip info which dislay all the trip related info e.g.,
+		o total fare:
+		o fare of distance:
+		o fare of time:
+		o discount
+		o This function should also call the member functions of driver and rider info to display their data.
+
+Description of fares on different
+categories: Bike:
+	• base fare: 60
+	• per minute charges: 3.67
+	• per km charges: 6.17
+Auto:
+	• Base Fare: Rs. 50.71
+	• Per KM: Rs.12.09
+	• Per Minute: Rs. 2.79
+Mini:
+	• Base Fare: Rs. 65
+	• Per KM: Rs. 8.13
+	• Per Minute: Rs. 3.63
+Go:
+	• Base Fare: Rs. 80
+	• Per KM: Rs. 10.16
+	• Per Minute: Rs. 4.54
+UberX:
+	• Base Fare: Rs. 100
+	• Per KM: Rs. 15.16
+	• Per Minute: Rs. 8.54
