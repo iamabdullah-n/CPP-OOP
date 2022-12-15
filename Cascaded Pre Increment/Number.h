@@ -11,6 +11,6 @@ public:
 	number(int);
 	~number();
 
-	number operator ++ ();
+	number& operator ++ ();
 	friend ostream& operator << (ostream&, const number&);
 };

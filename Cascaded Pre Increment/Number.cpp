@@ -10,7 +10,7 @@ number::number(int n)
 	num = n;
 }
 
-number number::operator ++ ()
+number& number::operator ++ ()
 {
 	num++;
 

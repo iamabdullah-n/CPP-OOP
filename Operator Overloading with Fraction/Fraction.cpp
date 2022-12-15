@@ -56,14 +56,14 @@ fraction fraction::operator - ()
 	return result;
 }
 
-fraction fraction::operator ++ ()
+fraction& fraction::operator ++ ()
 {
 	num = num + den;
 
 	return *this;
 }
 
-fraction fraction::operator ++ (int)
+fraction& fraction::operator ++ (int)
 {
 	fraction temp = *this;
 

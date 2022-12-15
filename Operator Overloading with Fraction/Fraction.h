@@ -14,8 +14,8 @@ public:
 	fraction operator + (const fraction&);
 	fraction operator - (const fraction&);
 	fraction operator - ();
-	fraction operator ++ ();
-	fraction operator ++ (int);
+	fraction& operator ++ ();
+	fraction& operator ++ (int);
 	bool operator == (const fraction&);
 	friend ostream& operator << (ostream&, const fraction&);
 };
